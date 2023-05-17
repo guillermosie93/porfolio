@@ -1,0 +1,24 @@
+{% set img = content.field_imagen_del_header.0['#markup'] %}
+{% set components = content.field_component %}
+{% set topics = content.topics %}
+
+<div id="contenido-{{ node.id() }}" class="banner-l d-flex flex-wrap align-content-center">
+    <div class="card-body mx-auto">
+        <h2 class="card-title">{{ label }}</h2>
+    </div>
+</div>
+
+<div class="container">
+    {% for component in components %}
+        {{ component }}
+    {% endfor %}
+</div>
+<script> console.log({{ content | json_encode | raw }}) </script>
+
+<style>
+    #contenido-{{ node.id() }}{
+        background-img: url('{{ img }}');
+        background-size: cover;
+        background-position: center;
+    }
+</style>

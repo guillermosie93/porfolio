@@ -1,0 +1,15 @@
+name: porfolio
+type: theme
+base theme: bartik
+description: A flexible theme with a responsive, mobile-first layout.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+libraries:
+  - porfolio/bootstrap
+  - porfolio/global
+regions:
+  header: 'Header'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  footer: 'Footer'

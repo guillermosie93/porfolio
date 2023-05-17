@@ -1,0 +1,41 @@
+@import './input';
+@import './buttons';
+#webformContact{
+    background-image: url(../../porfolio/images/bk-wbform.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    form{
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+        padding-top: 2rem;
+        margin: auto;
+        width: 30%;
+        .js-form-item, .js-form-type-textarea{
+            @extend %inputText;
+        }
+        .checkboxes--wrapper{
+            legend{
+                color: #ffffff;
+                margin: auto;
+                width: fit-content;
+            }
+            .js-webform-checkboxes{
+                .js-form-type-checkbox{
+                    input{
+                        @extend %inputCheckbox;
+                    }
+                    label{
+                        font-size: 10px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .button--primary{
+            @include btn(primary, secondary);
+            margin: auto;
+        }
+    }
+}

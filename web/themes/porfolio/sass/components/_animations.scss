@@ -1,0 +1,21 @@
+$type: jump, turn, grow;
+@keyframes jump {
+    50%{
+        transform: translateY(-20px);
+    }
+}
+@keyframes turn {
+    25%{
+        transform: rotateZ(10deg);
+    }
+    50%{
+        transform: rotateZ(-10deg);
+    }
+}
+
+@keyframes grow{
+    50%{
+        transform: scale(1.2);
+    }
+}
+

@@ -1,0 +1,104 @@
+@import '../base/custom-variables';
+%btn{
+    display: flex;
+    width: auto;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 1s;
+    &:hover{
+        border: none;
+    }
+}
+
+@mixin btn($type, $style){
+    @extend %btn;
+    @if $type == 'primary'{
+        @if $style == 'positive'{
+            background-color: $color-primary;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            &:hover{
+                background-color: #ffffff;
+                color: $color-primary;
+                border: 2px solid $color-primary;    
+            }
+        }
+        @else{
+            background-color: #ffffff;
+            color: $color-primary;
+            border: 2px solid $color-primary;
+            &:hover{
+                background-color: $color-primary;
+                color: #ffffff;
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+    @if $type == 'secondary'{
+        @if $style == 'positive'{
+            background-color: $color-secondary;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            &:hover{
+                background-color: #ffffff;
+                color: $color-primary;
+                border: 2px solid $color-secondary;
+            }
+        }
+        @else{
+            background-color: #ffffff;
+            color: $color-primary;
+            border: 2px solid $color-secondary;
+            &:hover{
+                background-color: $color-secondary;
+                color: #ffffff;
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+    @if $type == 'ligth'{
+            font-size: 2rem;
+            font-weight: 900;
+            border-radius: 360px;
+            border: none;
+            width: fit-content;
+            margin: auto;
+            &:hover, &:focus{
+                text-decoration: none;
+                border: none;
+            }
+        @if $style == 'positive'{
+            color: #ffffff;
+            &:hover, &:focus{
+                color: #ffffff;
+            }
+        }
+        @else{
+            color: $color-primary;
+            &:hover, &:focus{
+                color: $color-primary;
+            }
+        }
+    }
+}
+$btnPrimary: positive, negative;
+$btnSecondary: positive, negative;
+$btnLigth: positive, negative;
+
+@each $style in $btnPrimary{
+    .btn-primary-#{$style}{
+        @include btn(primary, $style);
+    }
+}
+@each $style in $btnSecondary{
+    .btn-secondary-#{$style}{
+        @include btn(secondary, $style);
+    }
+}
+@each $style in $btnLigth{
+    .btn-light-#{$style}{
+        @include btn(ligth, $style);
+    }
+}

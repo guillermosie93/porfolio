@@ -1,0 +1,14 @@
+{% set description = content.field_description.0 %}
+{% set type = content.field_formation_type.0 %}
+{% set is_finish = content.field_is_finish.0['#markup'].value %}
+
+<div class="card card-formation">
+    <div class="card-body">
+        <h3>{{ label.0['#context'].value }}</h3>
+        <p>
+            {{ description }}
+        </p>
+        <span class="badges badges-carrera mx-auto">{{ type }}</span>
+        <span>{{ is_finish }}</span>
+    </div>
+</div>

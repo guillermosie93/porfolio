@@ -1,0 +1,8 @@
+# Schema for the configuration files of the porfolio theme.
+porfolio.settings:
+  type: theme_settings
+  label: 'porfolio settings'
+  mapping:
+    font_size:
+      type: integer
+      label: Font size

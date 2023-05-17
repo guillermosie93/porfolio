@@ -1,0 +1,17 @@
+{% set text = content.field_url.0['#title'] %}
+{% set url = content.field_url.0['#url_title'] %}
+{% set type = content.field_type.0['#markup'] %}
+
+{% if type == 'light-positive' or type == 'light-negative' %}
+    <a class="btn-{{ type }}" href="{{ url }}">
+        <i class="bi bi-{{ text }}"></i>
+    </a>
+{% else %}
+    <a class="btn-{{ type }}" href="{{ url }}">
+        {{ text }}
+    </a>
+{% endif %}
+
+<script>
+    console.log({{ _context | json_encode | raw }})
+</script>

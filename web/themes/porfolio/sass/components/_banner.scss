@@ -1,0 +1,70 @@
+@import '../base/custom-variables';
+$bannerSizes: (xs: 10, s:25, m:50, l:75, xl:100);
+#banner-header{
+    background: url('../../../../sites/default/files/2023-04/banner-main.png');
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+%banner{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+@each $size, $heigth in $bannerSizes{
+    .banner-#{$size}{
+        height: #{$heigth}vh;
+    }
+}
+
+.banner-video{
+    @extend %banner;
+    video{
+        width: 98vw;
+    }
+}
+.banner{
+    @extend %banner;
+    &-img{
+        width: 75%;
+        height: 75%;
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+@mixin bk-color($type){
+    @if $type == 'primary'{
+        background-color: $color-primary !important;
+    }
+    @if $type == 'secondary'{
+        background-color: $color-secondary !important;
+    }
+    @if $type == 'default'{
+        background-color: #ffffff;
+    }
+}
+
+$typeBk: 'primary', 'secondary', 'default';
+
+@each $type in $typeBk{
+    .bk-#{$type}{
+        @include bk-color(#{$type});
+    }
+}
+
+.content{
+    margin-top: -10px !important;
+}
+
+#banner-22{
+    .mx-md-auto{
+        position: relative;
+        top: 40%;
+    }
+}

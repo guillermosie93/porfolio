@@ -1,0 +1,30 @@
+{{ attach_library('porfolio/vivus') }}
+
+{% set image = content.field_imagen.0 %}
+{% set level = content.field_level.0['#markup']|lower %}
+{% set nameSvg =  label.0['#context'].value|lower %}
+
+<div class="card-skill card" id="skill-{{ label.0['#context'].value|lower|replace({ ' ':'' }) }}">
+    <div id="card-img-{{ nameSvg }}" class="card-img-top">
+        {{ image }}
+    </div>
+    <div class="card-body pt-0">
+        <h3 class="card-title text-center">{{ label }}</h3>
+        <h6 class="card-title text-center mt-3">My Levels is:</h6>
+        <div class="card-skill-level mx-auto">
+            {% if level == 'trainee' %}
+                <img class="animation-turn" src="{{ base_path }}/themes/porfolio/images/egg.png"/>
+            {% elseif level == 'junior' %}
+                <img class="animation-grow" src="{{ base_path }}/themes/porfolio/images/chik-wEgg.png"/>
+            {% elseif level == 'semi-senior' %}
+                <img class="animation-jump" src="{{ base_path }}/themes/porfolio/images/chick.png"/>
+            {% elseif level == 'senior' %}
+                <img class="animation-jump" src="{{ base_path }}/themes/porfolio/images/chicken.png"/>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{# <script>
+    new Vivus('html', { duration: 200 });
+</script> #}

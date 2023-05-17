@@ -1,0 +1,41 @@
+@import '../base/custom-variables';
+
+%badges{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding: .5rem 1rem;
+    border-radius: 360px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1rem;
+    white-space: nowrap;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
+
+@mixin badges($type, $color){
+    @if $type == 'icon_and_text'{
+        display: flex;
+        flex-flow: row nowrap;
+        width: fit-content;
+        gap: 1rem;
+        background-color: $color;
+    }
+    @if $type == 'only_text'{
+        background-color: $color;
+    }
+}
+
+.badges{
+    @extend %badges;
+}
+.badges-carrera{
+    @include badges('only_text', $color-secondary);
+}

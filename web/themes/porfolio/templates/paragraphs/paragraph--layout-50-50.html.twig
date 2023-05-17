@@ -1,0 +1,33 @@
+{% set firstCol = content.field_first_column %}
+{% set secondCol = content.field_second_column %}
+{% set classes = content.field_classes.0 %}
+{% set id = content.field_id.0 %}
+{% set img = content.field_img %}
+{% set size = content.field_banner_size.0['#markup'] %}
+
+{% if id != null %}
+    <div id="{{ id }}" class="{{ classes }} banner-{{ size|lower }} col-md-12">
+{% else %}
+    <div id="layout-{{ paragraph.id() }}" class="{{ classes }} banner-{{ size|lower }} col-md-12">
+{% endif %}
+    <div class="row">
+        <div class="col-md-6">
+            {{ firstCol }}  
+        </div>
+        <div class="col-md-6">
+            {{ secondCol }}
+        </div>
+    </div>
+</div>
+
+<style>
+    {% if id != null %}
+        #layout-{{ id }}{
+    {% else %}
+        #layout-{{ paragraph.id() }}{
+    {% endif %}
+            background: url('{{ img.0['#markup'] }}');
+            background-position: center;
+            background-size: cover;
+        }
+</style>

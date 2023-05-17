@@ -1,0 +1,9 @@
+@import '../base/custom-variables';
+
+.carousel-formation{
+    & .slick{
+        &-track{
+            padding: 4rem 0;
+        }
+    }
+}

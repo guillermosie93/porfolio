@@ -1,0 +1,29 @@
+@import '../base/custom-variables';
+
+.footer{
+    background-color: #ffffff;
+    &-title{
+        color: $color-primary;
+    }
+    &-bubbles{
+        height: 2.5rem;
+        width: 2.5rem !important;
+        border-radius: 360px;
+        background-color: $color-primary;
+        padding: .5rem;
+        text-align: center;
+        i, p, h3,a{
+            color: #ffffff;
+        }
+    }
+    &-link{
+        width: fit-content;
+        padding: .5rem 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

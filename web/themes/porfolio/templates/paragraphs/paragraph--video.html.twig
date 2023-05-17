@@ -1,0 +1,13 @@
+{% set colour = content.field_colour.0['#color'] %}
+{% set is_banner = content.field_is_banner.0['#markup'] %}
+{% set video = content.field_video.0 %}
+
+{% if is_banner == 'Yes' %}
+<div class="col-md-12">
+    <div class="banner-video" style="background-color: {{ colour }}">
+        {{ video }}
+    </div>
+</div>
+{% else %}
+    {{ video }}
+{% endif %}

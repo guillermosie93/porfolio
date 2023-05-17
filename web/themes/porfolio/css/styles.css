@@ -1,0 +1,507 @@
+/* line 3, ../sass/components/_banner.scss */
+#banner-header {
+  background: url("../../../../sites/default/files/2023-04/banner-main.png");
+  background-position: top;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+/* line 11, ../sass/components/_banner.scss */
+.banner-video, .banner {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+/* line 18, ../sass/components/_banner.scss */
+.banner-xs {
+  height: 10vh;
+}
+
+/* line 18, ../sass/components/_banner.scss */
+.banner-s {
+  height: 25vh;
+}
+
+/* line 18, ../sass/components/_banner.scss */
+.banner-m {
+  height: 50vh;
+}
+
+/* line 18, ../sass/components/_banner.scss */
+.banner-l {
+  height: 75vh;
+}
+
+/* line 18, ../sass/components/_banner.scss */
+.banner-xl {
+  height: 100vh;
+}
+
+/* line 25, ../sass/components/_banner.scss */
+.banner-video video {
+  width: 98vw;
+}
+
+/* line 31, ../sass/components/_banner.scss */
+.banner-img {
+  width: 75%;
+  height: 75%;
+}
+/* line 34, ../sass/components/_banner.scss */
+.banner-img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* line 56, ../sass/components/_banner.scss */
+.bk-primary {
+  background-color: #006593 !important;
+}
+
+/* line 56, ../sass/components/_banner.scss */
+.bk-secondary {
+  background-color: #FF9A6E !important;
+}
+
+/* line 56, ../sass/components/_banner.scss */
+.bk-default {
+  background-color: #ffffff;
+}
+
+/* line 61, ../sass/components/_banner.scss */
+.content {
+  margin-top: -10px !important;
+}
+
+/* line 66, ../sass/components/_banner.scss */
+#banner-22 .mx-md-auto {
+  position: relative;
+  top: 40%;
+}
+
+/* line 2, ../sass/components/_buttons.scss */
+.btn-primary-positive, .btn-primary-negative, .btn-secondary-positive, .btn-secondary-negative, .btn-light-positive, .btn-light-negative, #webformContact form .button--primary {
+  display: flex;
+  width: auto;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 1s;
+}
+/* line 10, ../sass/components/_buttons.scss */
+.btn-primary-positive:hover, .btn-primary-negative:hover, .btn-secondary-positive:hover, .btn-secondary-negative:hover, .btn-light-positive:hover, .btn-light-negative:hover, #webformContact form .button--primary:hover {
+  border: none;
+}
+
+/* line 91, ../sass/components/_buttons.scss */
+.btn-primary-positive {
+  background-color: #006593;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+/* line 22, ../sass/components/_buttons.scss */
+.btn-primary-positive:hover {
+  background-color: #ffffff;
+  color: #006593;
+  border: 2px solid #006593;
+}
+
+/* line 91, ../sass/components/_buttons.scss */
+.btn-primary-negative {
+  background-color: #ffffff;
+  color: #006593;
+  border: 2px solid #006593;
+}
+/* line 32, ../sass/components/_buttons.scss */
+.btn-primary-negative:hover {
+  background-color: #006593;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* line 96, ../sass/components/_buttons.scss */
+.btn-secondary-positive {
+  background-color: #FF9A6E;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+/* line 44, ../sass/components/_buttons.scss */
+.btn-secondary-positive:hover {
+  background-color: #ffffff;
+  color: #006593;
+  border: 2px solid #FF9A6E;
+}
+
+/* line 96, ../sass/components/_buttons.scss */
+.btn-secondary-negative {
+  background-color: #ffffff;
+  color: #006593;
+  border: 2px solid #FF9A6E;
+}
+/* line 54, ../sass/components/_buttons.scss */
+.btn-secondary-negative:hover {
+  background-color: #FF9A6E;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* line 101, ../sass/components/_buttons.scss */
+.btn-light-positive {
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 360px;
+  border: none;
+  width: fit-content;
+  margin: auto;
+  color: #ffffff;
+}
+/* line 68, ../sass/components/_buttons.scss */
+.btn-light-positive:hover, .btn-light-positive:focus {
+  text-decoration: none;
+  border: none;
+}
+/* line 74, ../sass/components/_buttons.scss */
+.btn-light-positive:hover, .btn-light-positive:focus {
+  color: #ffffff;
+}
+
+/* line 101, ../sass/components/_buttons.scss */
+.btn-light-negative {
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 360px;
+  border: none;
+  width: fit-content;
+  margin: auto;
+  color: #006593;
+}
+/* line 68, ../sass/components/_buttons.scss */
+.btn-light-negative:hover, .btn-light-negative:focus {
+  text-decoration: none;
+  border: none;
+}
+/* line 80, ../sass/components/_buttons.scss */
+.btn-light-negative:hover, .btn-light-negative:focus {
+  color: #006593;
+}
+
+@keyframes jump {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes turn {
+  25% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+}
+@keyframes grow {
+  50% {
+    transform: scale(1.2);
+  }
+}
+/* line 4, ../sass/components/_cards.scss */
+.card-skill {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 10px !important;
+  width: 100%;
+  transition: 1s;
+  box-shadow: 0px 20px 20px 0px #00000070;
+  backdrop-filter: blur(100px);
+}
+/* line 13, ../sass/components/_cards.scss */
+.card-skill .card-img-top {
+  position: relative;
+  top: -40px;
+  height: 90px;
+  width: 100%;
+  transition: 1s;
+}
+/* line 19, ../sass/components/_cards.scss */
+.card-skill .card-img-top img, .card-skill .card-img-top svg {
+  margin: auto;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+/* line 26, ../sass/components/_cards.scss */
+.card-skill .card-body {
+  transition: 1s;
+  color: #ffffff;
+}
+
+/* line 32, ../sass/components/_cards.scss */
+.card-skill {
+  margin: 4rem auto;
+  background: linear-gradient(to bottom, #006594, #037fb8);
+}
+/* line 36, ../sass/components/_cards.scss */
+.card-skill-level {
+  color: white;
+  width: 25%;
+}
+/* line 39, ../sass/components/_cards.scss */
+.card-skill-level img {
+  margin: 3rem auto;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+/* line 47, ../sass/components/_cards.scss */
+.card-skill .animation-jump {
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+  animation-play-state: paused;
+}
+/* line 54, ../sass/components/_cards.scss */
+.card-skill:hover .animation-jump {
+  animation-play-state: running;
+}
+/* line 47, ../sass/components/_cards.scss */
+.card-skill .animation-turn {
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+  animation-play-state: paused;
+}
+/* line 54, ../sass/components/_cards.scss */
+.card-skill:hover .animation-turn {
+  animation-play-state: running;
+}
+/* line 47, ../sass/components/_cards.scss */
+.card-skill .animation-grow {
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+  animation-play-state: paused;
+}
+/* line 54, ../sass/components/_cards.scss */
+.card-skill:hover .animation-grow {
+  animation-play-state: running;
+}
+
+/* line 59, ../sass/components/_cards.scss */
+.card-formation {
+  display: flex !important;
+  flex-flow: column wrap;
+  align-content: center;
+  background-color: #006593 !important;
+  backdrop-filter: blur(100px);
+  border-radius: 360px !important;
+  box-shadow: 0px 0px 16px 7px #00000070;
+  margin-inline: 1rem;
+}
+/* line 68, ../sass/components/_cards.scss */
+.card-formation .card-body {
+  height: fit-content;
+  flex: none;
+  margin: auto;
+}
+/* line 72, ../sass/components/_cards.scss */
+.card-formation .card-body h3 {
+  height: 70px;
+  max-width: 85%;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 79, ../sass/components/_cards.scss */
+.card-formation .card-body p {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  height: 60px;
+  color: #ffffff;
+}
+
+/* line 5, ../sass/components/_menu.scss */
+.header .menu-nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #006593;
+  backdrop-filter: blur(100px);
+  height: 90px;
+  width: 100%;
+}
+/* line 13, ../sass/components/_menu.scss */
+.header .menu-nav-site-branding {
+  padding: .5rem 1rem;
+  height: 80px;
+  margin: auto 0;
+  opacity: 0.0;
+}
+/* line 18, ../sass/components/_menu.scss */
+.header .menu-nav-site-branding img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+/* line 25, ../sass/components/_menu.scss */
+.header .menu-nav .nav-link {
+  color: #ffffff;
+}
+
+/* line 5, ../sass/components/_carousel.scss */
+.carousel-formation .slick-track {
+  padding: 4rem 0;
+}
+
+/* line 3, ../sass/components/_badges.scss */
+.badges {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  padding: .5rem 1rem;
+  border-radius: 360px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+/* line 13, ../sass/components/_badges.scss */
+.badges a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 16, ../sass/components/_badges.scss */
+.badges a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 39, ../sass/components/_badges.scss */
+.badges-carrera {
+  background-color: #FF9A6E;
+}
+
+/* line 3, ../sass/components/_input.scss */
+#webformContact form .js-form-item, #webformContact form .js-form-type-textarea {
+  display: flex;
+  flex-flow: column;
+}
+/* line 6, ../sass/components/_input.scss */
+#webformContact form .js-form-item label, #webformContact form .js-form-type-textarea label {
+  color: #ffffff;
+  margin: auto;
+}
+/* line 10, ../sass/components/_input.scss */
+#webformContact form .js-form-item input, #webformContact form .js-form-type-textarea input, #webformContact form .js-form-item div textarea, #webformContact form .js-form-type-textarea div textarea {
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: none;
+  transition: 1s;
+  color: #ffffff;
+  text-align: center;
+}
+/* line 19, ../sass/components/_input.scss */
+#webformContact form .js-form-item input:focus, #webformContact form .js-form-type-textarea input:focus, #webformContact form .js-form-item div textarea:focus, #webformContact form .js-form-type-textarea div textarea:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-bottom: 2px solid #FF9A6E;
+}
+
+/* line 28, ../sass/components/_input.scss */
+#webformContact form .checkboxes--wrapper .js-webform-checkboxes .js-form-type-checkbox input {
+  appearance: none;
+  accent-color: #FF9A6E;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  margin: auto;
+}
+/* line 36, ../sass/components/_input.scss */
+#webformContact form .checkboxes--wrapper .js-webform-checkboxes .js-form-type-checkbox input:checked {
+  box-shadow: inset 0 0 3px 4px #fff;
+}
+
+/* line 3, ../sass/components/_webForm.scss */
+#webformContact {
+  background-image: url(../../porfolio/images/bk-wbform.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 8, ../sass/components/_webForm.scss */
+#webformContact form {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  margin: auto;
+  width: 30%;
+}
+/* line 19, ../sass/components/_webForm.scss */
+#webformContact form .checkboxes--wrapper legend {
+  color: #ffffff;
+  margin: auto;
+  width: fit-content;
+}
+/* line 29, ../sass/components/_webForm.scss */
+#webformContact form .checkboxes--wrapper .js-webform-checkboxes .js-form-type-checkbox label {
+  font-size: 10px;
+  font-weight: 700;
+}
+/* line 36, ../sass/components/_webForm.scss */
+#webformContact form .button--primary {
+  background-color: #ffffff;
+  color: #006593;
+  border: 2px solid #006593;
+  margin: auto;
+}
+/* line 32, ../sass/components/_buttons.scss */
+#webformContact form .button--primary:hover {
+  background-color: #006593;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* line 3, ../sass/components/_footer.scss */
+.footer {
+  background-color: #ffffff;
+}
+/* line 5, ../sass/components/_footer.scss */
+.footer-title {
+  color: #006593;
+}
+/* line 8, ../sass/components/_footer.scss */
+.footer-bubbles {
+  height: 2.5rem;
+  width: 2.5rem !important;
+  border-radius: 360px;
+  background-color: #006593;
+  padding: .5rem;
+  text-align: center;
+}
+/* line 15, ../sass/components/_footer.scss */
+.footer-bubbles i, .footer-bubbles p, .footer-bubbles h3, .footer-bubbles a {
+  color: #ffffff;
+}
+/* line 19, ../sass/components/_footer.scss */
+.footer-link {
+  width: fit-content;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 25, ../sass/components/_footer.scss */
+.footer-link:hover {
+  text-decoration: underline;
+}
